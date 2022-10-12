@@ -1,0 +1,17 @@
+version: "3"
+services: 
+  react-quiz:
+    # stdin_open: true
+    # tty: true
+    build: 
+      context: .
+      dockerfile: dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+    # environment:
+    #   - REACT_APP_NAME =ashik
+    env_file:
+    - ./.env
+

@@ -64,6 +64,7 @@ const App = () => {
 
   return (
     <>
+    {/* <h1>hello </h1> */}
     <GlobalStyle/>
       <Wrapper>
         <h1> React Quiz</h1>
